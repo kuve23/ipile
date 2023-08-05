@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const app = express();
 const mongoose = require("mongoose");
-mongoose.connect(process.env.STRING);
+
 
 
 const ipileSChema = new mongoose.Schema({
@@ -63,11 +63,8 @@ app.post("/contact", function(req, res){
    res.redirect("/contact")
 })
 
-
-
-
-
-
 app.listen(3000, function(){
     console.log("server listening on port 3000")
 });
+
+mongoose.connect(process.env.STRING);

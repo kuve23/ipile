@@ -1,0 +1,52 @@
+<%- include('partials/header'); -%>
+
+<div class="contact-container">
+
+    <div class="contact-1">
+        <h4>Contact Us</h4>
+        <h2>For Inquiries Or Questions</h2>
+        <p>please use the form or call us on: 08089321462, 07069658220 or 08113074842</p>
+    </div>
+
+    <div class="contact-2">
+        <form action="/contact" method="post">
+            <div class="contact-inner">
+        
+                <div class="row">
+                    
+                    <input type="text" name="firstName" class="form-control" placeholder="First name" aria-label="First name">
+                    
+                    <input type="text" name="lastName" class="form-control" placeholder="Last name" aria-label="Last name">
+        
+                </div>
+
+                <div class="row">
+                
+                    <input type="email" name="email" class="form-control" placeholder="Email" aria-label="First name">
+                    <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Last name">
+            
+                </div>
+
+                <div>
+                    <p>Leave us a Message.....</p>
+                    <textarea name="message" class="area" id="floatingTextarea2"  ></textarea>
+                    
+                </div> 
+
+                <div class="contact-btn2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                
+            </div>
+      </form>
+        <div class="contact-img">
+            <img src="images/female-worker.jpg" />
+        </div> 
+    </div>
+        
+
+</div>
+
+
+
+<%- include('partials/footer'); -%>
